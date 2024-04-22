@@ -94,12 +94,7 @@ button{
     border-radius: 10px;
     background-color: #8B322C;
 }
-input[type=number]::placeholder{
-    color: #e7e5e4;
-    font-weight: 200;
-    visibility: hidden;
-    font-size: 20px;
-}
+
 input[type=number]{
     width: 200px;
     text-align: center;
