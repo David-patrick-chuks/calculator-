@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+
+body{
+    width: 100wh;
+    height: 100vh;
+    background-color: #51829B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    
+    user-select: none; 
+
+    
+}
+option{
+    background-color: #8B322C;
+    color: white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select:focus{
+    border: 3px solid #8B322C;
+    outline: none;
+}
+select{
+    padding: 0px 15px;
+    color: ;
+    display: flex;
+    background-color: rgb(215, 215, 215);
+    appearance: none;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 35px;
+}
+small{
+    color: #EADFB4;
+}
+main{
+    display: flex;
+    padding: 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid rgb(255, 255, 255);  */
+    background-color: #000000;
+    box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
+    border-radius: 12px;
+
+}
+button:hover{
+    background-color: #5f1c17;
+    transition: all 0.4s ease;
+}
+section{
+    border-top: 2px solid #8B322C;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 10px; */
+    gap: 20px;
+
+}
+input[type=number]:focus {
+    border: 3px solid #8B322C;
+    outline: none;
+  }
+header{
+    font-size: 70px;
+    font-weight: 500;
+    color: #EADFB4;
+}
+button{
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: #EADFB4;
+    border-radius: 10px;
+    background-color: #8B322C;
+}
+input[type=number]::placeholder{
+    color: #e7e5e4;
+    font-weight: 200;
+    visibility: hidden;
+    font-size: 20px;
+}
+input[type=number]{
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    font-weight: 600;
+    font-size: 30px;
+    background-color: #b1b1b1;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: red; */
+    width: 450px;
+}
+
+
+
+@media (max-width: 480px){
+    body{
+        background-color: rgb(38, 38, 38);
+    }
+    .container{
+        display: flex;
+        /* flex-direction: column; */
+        width: 250px;
+    }
+    header{
+        font-size: 30px;
+    }
+    main{
+        padding: 20px;
+        
+    }
+    section{
+        padding: 10px;
+    }
+    input[type=number]{
+        width: 100px;
+        text-align: center;
+        height: 50px;
+        font-weight: 600;
+        font-size: 30px;
+        background-color: #b1b1b1;
+        color: #000000;
+        border: none;
+        border-radius: 10px;
+    }
+}
