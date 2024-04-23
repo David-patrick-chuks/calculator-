@@ -2,6 +2,7 @@ function calculate() {
     var input1 = parseFloat(document.getElementById("sum1").value);
     var operator = document.getElementById("operator").value;
     var input2 = parseFloat(document.getElementById("sum2").value);
+    
   
     var result;
   
@@ -18,15 +19,31 @@ function calculate() {
       case "divide":
         if (input2 !== 0) {
           result = input1 / input2;
-        } else {
-          console.log("Error: Division by zero");
-          return;
+        } else if (input1 === 0 && input2 === 0) {
+          console.log("Math ERROR:");
+        }
+        else{
+          console.log("Error: Value cannot be divided");
         }
         break;
       default:
         console.log("Error: Invalid operator");
-        return;
+            
     }
   
-    console.log("Result:", result);
+    console.log(result);
   }
+
+
+
+
+
+    // Javascript operations// ----------------
+
+    var a= "10";
+    var b= 20;
+
+    console.log(parseInt((a) + b));
+
+
+
