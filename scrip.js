@@ -31,19 +31,37 @@ function calculate() {
             
     }
   
-    console.log(result);
+    // console.log(Answer ${result});
+    
+    console.log("Answer=", result); //chuks style//
+    console.log(`Result= ${result}`); //interpolation style.//
   }
 
 
 
-
+  console.log("add");
 
     // Javascript operations// ----------------
+    //   ! || &   //
+    var num3 = 23;
+    var num4 = 30;
 
-    var a= "10";
-    var b= 20;
+    if (num3 < num4) {
+        if (num3 == 23) {
+            console.log(chuks);
+        } else {
+            console.log(coreect);
+            
+        }
+    }
+     else{
+        
+        console.log(right);
+    }
 
-    console.log(parseInt((a) + b));
+
+
+
 
 
 
